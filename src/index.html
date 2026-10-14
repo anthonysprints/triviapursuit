@@ -76,8 +76,9 @@
   </section>
 
   <!-- ══ SETTINGS ══ -->
-  <div class="sheet-scrim" id="sheet-scrim" hidden></div>
-  <aside class="sheet" id="sheet" hidden aria-label="Settings">
+  <!-- A full view, not an overlay: a fixed-position sheet gets clipped
+       whenever the visible area is shorter than its content. -->
+  <section class="view" id="view-settings" hidden aria-label="Settings">
     <div class="sheet-head">
       <h2>Settings</h2>
       <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
@@ -127,7 +128,7 @@
       </div>
       <p class="field-help" id="flag-summary"></p>
     </div>
-  </aside>
+  </section>
 
   <!-- ══ WHO'S PLAYING ══ -->
   <div class="dialog-scrim" id="start-scrim" hidden></div>

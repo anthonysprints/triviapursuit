@@ -569,32 +569,14 @@ body {
 .view-flood .btn-flag { color: var(--on-cat, var(--on-fill)); }
 .view-flood .btn-flag.is-flagged { color: var(--paper); }
 
-/* ── settings sheet ──────────────────────────────────────── */
+/* ── settings ────────────────────────────────────────────── */
 
-.sheet-scrim {
-  position: fixed;
-  inset: 0;
-  z-index: 10;
-  background: rgba(20, 16, 15, 0.55);
-}
-
-.sheet {
-  position: fixed;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  width: min(460px, 100%);
-  max-height: 90dvh;
-  overflow-y: auto;
-  z-index: 11;
-  background: var(--paper);
-  border: 4px solid var(--outline);
-  border-bottom: 0;
-  border-radius: 16px 16px 0 0;
-  padding: 20px 20px 34px;
-  display: flex;
-  flex-direction: column;
+/* A normal view rather than a fixed overlay — it scrolls with the page,
+   so it cannot be clipped on a short screen the way a bottom sheet was. */
+#view-settings {
   gap: 24px;
+  justify-content: flex-start;
+  padding-bottom: 8px;
 }
 
 .sheet-head {
@@ -741,10 +723,13 @@ input[type="range"] {
 .dialog {
   position: fixed;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* Anchored near the top rather than vertically centred: centring assumes
+     the viewport matches the visible area, which is not true when the page
+     is embedded in a shorter frame. */
+  top: 24px;
+  transform: translateX(-50%);
   width: min(400px, calc(100% - 32px));
-  max-height: 88dvh;
+  max-height: calc(100dvh - 48px);
   overflow-y: auto;
   z-index: 13;
   background: var(--paper);
@@ -877,8 +862,9 @@ input[type="range"] {
   </section>
 
   <!-- ══ SETTINGS ══ -->
-  <div class="sheet-scrim" id="sheet-scrim" hidden></div>
-  <aside class="sheet" id="sheet" hidden aria-label="Settings">
+  <!-- A full view, not an overlay: a fixed-position sheet gets clipped
+       whenever the visible area is shorter than its content. -->
+  <section class="view" id="view-settings" hidden aria-label="Settings">
     <div class="sheet-head">
       <h2>Settings</h2>
       <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
@@ -928,7 +914,7 @@ input[type="range"] {
       </div>
       <p class="field-help" id="flag-summary"></p>
     </div>
-  </aside>
+  </section>
 
   <!-- ══ WHO'S PLAYING ══ -->
   <div class="dialog-scrim" id="start-scrim" hidden></div>
@@ -1586,7 +1572,7 @@ input[type="range"] {
   // ── views ──────────────────────────────────────────────────
 
   function show(name) {
-    ['home', 'question', 'answer'].forEach(function (view) {
+    ['home', 'question', 'answer', 'settings'].forEach(function (view) {
       $('view-' + view).hidden = view !== name;
     });
     if (name === 'home') refreshHome();
@@ -1597,14 +1583,11 @@ input[type="range"] {
 
   function openSheet() {
     refreshSettings();
-    $('sheet').hidden = false;
-    $('sheet-scrim').hidden = false;
+    show('settings');
   }
 
   function closeSheet() {
-    $('sheet').hidden = true;
-    $('sheet-scrim').hidden = true;
-    refreshHome();
+    show('home');
   }
 
   function refreshSettings() {
@@ -1688,7 +1671,6 @@ input[type="range"] {
 
   $('open-settings').addEventListener('click', openSheet);
   $('close-settings').addEventListener('click', closeSheet);
-  $('sheet-scrim').addEventListener('click', closeSheet);
 
   $('seg-difficulty').addEventListener('click', function (event) {
     var button = event.target.closest('button[data-diff]');
@@ -1759,7 +1741,7 @@ input[type="range"] {
 
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
-    if (!$('sheet').hidden) closeSheet();
+    if (!$('view-settings').hidden) closeSheet();
     else if (!$('start-dialog').hidden && !$('start-cancel').hidden) closeStartDialog();
   });
 

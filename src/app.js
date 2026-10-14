@@ -636,7 +636,7 @@
   // ── views ──────────────────────────────────────────────────
 
   function show(name) {
-    ['home', 'question', 'answer'].forEach(function (view) {
+    ['home', 'question', 'answer', 'settings'].forEach(function (view) {
       $('view-' + view).hidden = view !== name;
     });
     if (name === 'home') refreshHome();
@@ -647,14 +647,11 @@
 
   function openSheet() {
     refreshSettings();
-    $('sheet').hidden = false;
-    $('sheet-scrim').hidden = false;
+    show('settings');
   }
 
   function closeSheet() {
-    $('sheet').hidden = true;
-    $('sheet-scrim').hidden = true;
-    refreshHome();
+    show('home');
   }
 
   function refreshSettings() {
@@ -738,7 +735,6 @@
 
   $('open-settings').addEventListener('click', openSheet);
   $('close-settings').addEventListener('click', closeSheet);
-  $('sheet-scrim').addEventListener('click', closeSheet);
 
   $('seg-difficulty').addEventListener('click', function (event) {
     var button = event.target.closest('button[data-diff]');
@@ -809,7 +805,7 @@
 
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
-    if (!$('sheet').hidden) closeSheet();
+    if (!$('view-settings').hidden) closeSheet();
     else if (!$('start-dialog').hidden && !$('start-cancel').hidden) closeStartDialog();
   });
 
