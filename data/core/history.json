@@ -1766,5 +1766,450 @@
     "era": "timeless",
     "topic": "medicine-history",
     "pack": "core"
+  },
+  {
+    "id": "his-121",
+    "category": "history",
+    "difficulty": 1,
+    "q": "In the Roman calendar, on what date did the Ides of March fall?",
+    "a": "The 15th of March",
+    "accept": [
+      "March 15",
+      "The 15th",
+      "15th"
+    ],
+    "note": "Caesar was assassinated on it in 44 BC, which is why Shakespeare has a soothsayer warn him to beware it.",
+    "era": "timeless",
+    "topic": "ancient-rome",
+    "pack": "core"
+  },
+  {
+    "id": "his-122",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Which NASA mission carried the first humans to land on the Moon in July 1969?",
+    "a": "Apollo 11",
+    "accept": [
+      "Apollo Eleven"
+    ],
+    "note": "Michael Collins stayed in lunar orbit while his two crewmates walked on the surface.",
+    "era": "timeless",
+    "topic": "space-race",
+    "pack": "core"
+  },
+  {
+    "id": "his-123",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Whose almost untouched tomb did the archaeologist Howard Carter open in the Valley of the Kings in 1922?",
+    "a": "Tutankhamun",
+    "accept": [
+      "King Tut",
+      "Tutankhamen",
+      "Tutankhaten"
+    ],
+    "note": "He was a minor pharaoh in life; the intact tomb is what made him famous.",
+    "era": "timeless",
+    "topic": "ancient-egypt",
+    "pack": "core"
+  },
+  {
+    "id": "his-124",
+    "category": "history",
+    "difficulty": 1,
+    "q": "What name is given to the flowering of art and learning that began in Italy in the 14th century and spread across Europe?",
+    "a": "The Renaissance",
+    "accept": [
+      "Renaissance"
+    ],
+    "note": "The word simply means \"rebirth\" in French.",
+    "era": "timeless",
+    "topic": "renaissance",
+    "pack": "core"
+  },
+  {
+    "id": "his-125",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Which US state spent almost ten years as an independent republic before joining the Union in 1845?",
+    "a": "Texas",
+    "accept": [
+      "The Republic of Texas"
+    ],
+    "note": "It broke from Mexico in 1836 and ran its own government, currency and foreign policy for nine years.",
+    "era": "timeless",
+    "topic": "american-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-126",
+    "category": "history",
+    "difficulty": 1,
+    "q": "What name is given to the network of ancient trade routes that carried goods between China and the Mediterranean world?",
+    "a": "The Silk Road",
+    "accept": [
+      "Silk Road",
+      "Silk Routes",
+      "Silk Route"
+    ],
+    "note": "The name was coined in the 19th century, long after the routes were in use.",
+    "era": "timeless",
+    "topic": "trade-and-exploration",
+    "pack": "core"
+  },
+  {
+    "id": "his-127",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Who made the first solo nonstop flight across the Atlantic in 1927?",
+    "a": "Charles Lindbergh",
+    "accept": [
+      "Lindbergh"
+    ],
+    "note": "He flew New York to Paris in about 33 hours in the Spirit of St. Louis, staying awake the whole way.",
+    "era": "timeless",
+    "topic": "aviation",
+    "pack": "core"
+  },
+  {
+    "id": "his-128",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Who was the first woman to win a Nobel Prize, honoured in 1903 for work on radioactivity?",
+    "a": "Marie Curie",
+    "accept": [
+      "Curie",
+      "Maria Sklodowska-Curie"
+    ],
+    "note": "She later won a second Nobel, in chemistry, in 1911.",
+    "era": "timeless",
+    "topic": "science-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-129",
+    "category": "history",
+    "difficulty": 1,
+    "q": "Which Paris fortress and prison was stormed by a crowd on 14 July 1789?",
+    "a": "The Bastille",
+    "accept": [
+      "Bastille"
+    ],
+    "note": "Only seven prisoners were being held inside at the time.",
+    "era": "timeless",
+    "topic": "french-revolution",
+    "pack": "core"
+  },
+  {
+    "id": "his-130",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which is older: Harvard University, or Isaac Newton?",
+    "a": "Harvard University",
+    "accept": [
+      "Harvard"
+    ],
+    "note": "Harvard was founded in 1636; Newton was born six years later, at the end of 1642.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-131",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which came first: the founding of the Nintendo company, or the end of the Ottoman Empire?",
+    "a": "The founding of Nintendo",
+    "accept": [
+      "Nintendo",
+      "Nintendo's founding"
+    ],
+    "note": "Nintendo started out making playing cards in 1889; the Ottoman sultanate was abolished in 1922.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-132",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which European settlement in what is now the United States was founded first: St. Augustine in Florida, or Jamestown in Virginia?",
+    "a": "St. Augustine",
+    "accept": [
+      "Saint Augustine",
+      "St Augustine"
+    ],
+    "note": "The Spanish founded St. Augustine in 1565, forty-two years before the English reached Jamestown in 1607.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-133",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which is older: Westminster Abbey in London, or the Aztec capital of Tenochtitlan?",
+    "a": "Westminster Abbey",
+    "accept": [
+      "The Abbey",
+      "Westminster"
+    ],
+    "note": "The abbey church was consecrated in 1065; Tenochtitlan was founded in 1325.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-134",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which came first: the first Olympic Games of ancient Greece, or the founding of the Roman Republic?",
+    "a": "The Olympic Games",
+    "accept": [
+      "The ancient Olympic Games",
+      "The Olympics"
+    ],
+    "note": "The games are traditionally dated to 776 BC, the republic to 509 BC.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-135",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which came first: the Hijra, Muhammad's migration to Medina, or the Viking raid on the monastery of Lindisfarne?",
+    "a": "The Hijra",
+    "accept": [
+      "Hijra",
+      "Hegira",
+      "The migration to Medina"
+    ],
+    "note": "The Hijra took place in 622; Lindisfarne was raided in 793.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
+  },
+  {
+    "id": "his-136",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Anne Frank was born in the same year as which American civil rights leader?",
+    "a": "Martin Luther King Jr.",
+    "accept": [
+      "Martin Luther King",
+      "MLK",
+      "Dr King"
+    ],
+    "note": "Both were born in 1929, he in January and she in June.",
+    "era": "timeless",
+    "topic": "surprising-overlaps",
+    "pack": "core"
+  },
+  {
+    "id": "his-137",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which Russian ruler was the first to be crowned Tsar of All Russia, in 1547?",
+    "a": "Ivan the Terrible",
+    "accept": [
+      "Ivan IV",
+      "Ivan the Fourth"
+    ],
+    "note": "He was a near contemporary of Elizabeth I, and the two exchanged letters.",
+    "era": "timeless",
+    "topic": "russian-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-138",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which country became, in 1893, the first self-governing nation to give women the vote in national elections?",
+    "a": "New Zealand",
+    "accept": [],
+    "note": "A petition with nearly 32,000 signatures helped push the bill through.",
+    "era": "timeless",
+    "topic": "modern-era",
+    "pack": "core"
+  },
+  {
+    "id": "his-139",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which Spanish conquistador led the expedition that overthrew the Inca Empire in the 1530s?",
+    "a": "Francisco Pizarro",
+    "accept": [
+      "Pizarro"
+    ],
+    "note": "He founded Lima in 1535 as the capital of Spanish Peru.",
+    "era": "timeless",
+    "topic": "age-of-exploration",
+    "pack": "core"
+  },
+  {
+    "id": "his-140",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which English mathematician led the wartime work on breaking the German Enigma cipher at Bletchley Park?",
+    "a": "Alan Turing",
+    "accept": [
+      "Turing"
+    ],
+    "note": "His pre-war paper on computable numbers laid groundwork for the modern computer.",
+    "era": "timeless",
+    "topic": "world-war-two",
+    "pack": "core"
+  },
+  {
+    "id": "his-141",
+    "category": "history",
+    "difficulty": 2,
+    "q": "What name is given to the operation that supplied West Berlin by air for nearly a year in 1948 and 1949?",
+    "a": "The Berlin Airlift",
+    "accept": [
+      "Berlin Airlift",
+      "The Berlin Blockade airlift"
+    ],
+    "note": "At its peak, aircraft were landing in the city every few minutes around the clock.",
+    "era": "timeless",
+    "topic": "cold-war",
+    "pack": "core"
+  },
+  {
+    "id": "his-142",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which Japanese period began in 1868 with the restoration of direct imperial rule and a rush to modernise?",
+    "a": "The Meiji Restoration",
+    "accept": [
+      "Meiji Restoration",
+      "Meiji era",
+      "Meiji period",
+      "Meiji"
+    ],
+    "note": "Within forty years Japan had railways, a modern navy and a written constitution.",
+    "era": "timeless",
+    "topic": "japanese-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-143",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which Egyptian queen ruled as pharaoh in her own right and built a terraced temple at Deir el-Bahari?",
+    "a": "Hatshepsut",
+    "accept": [],
+    "note": "She reigned for about twenty years in the 15th century BC and was often depicted as a male king.",
+    "era": "timeless",
+    "topic": "ancient-egypt",
+    "pack": "core"
+  },
+  {
+    "id": "his-144",
+    "category": "history",
+    "difficulty": 2,
+    "q": "Which German airship caught fire while landing at Lakehurst, New Jersey, in May 1937?",
+    "a": "The Hindenburg",
+    "accept": [
+      "Hindenburg",
+      "LZ 129 Hindenburg"
+    ],
+    "note": "The disaster effectively ended the brief era of passenger airship travel.",
+    "era": "timeless",
+    "topic": "modern-era",
+    "pack": "core"
+  },
+  {
+    "id": "his-145",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which US president served the shortest term, dying just 31 days after his inauguration in 1841?",
+    "a": "William Henry Harrison",
+    "accept": [
+      "Harrison",
+      "W. H. Harrison"
+    ],
+    "note": "His grandson Benjamin Harrison later served a full term as president.",
+    "era": "timeless",
+    "topic": "american-presidents",
+    "pack": "core"
+  },
+  {
+    "id": "his-146",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which Habsburg ruler was both Holy Roman Emperor and King of Spain before abdicating his crowns in 1556?",
+    "a": "Charles V",
+    "accept": [
+      "Charles the Fifth",
+      "Charles I of Spain",
+      "Carlos V"
+    ],
+    "note": "He split his inheritance, leaving Spain to his son Philip II and the imperial title to his brother Ferdinand.",
+    "era": "timeless",
+    "topic": "early-modern-europe",
+    "pack": "core"
+  },
+  {
+    "id": "his-147",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which ruler founded the Mughal Empire after winning the first Battle of Panipat in 1526?",
+    "a": "Babur",
+    "accept": [
+      "Zahir-ud-din Muhammad Babur",
+      "Babar"
+    ],
+    "note": "He claimed descent from both Timur and Genghis Khan.",
+    "era": "timeless",
+    "topic": "indian-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-148",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which African country defeated an invading Italian army at the Battle of Adwa in 1896, keeping its independence?",
+    "a": "Ethiopia",
+    "accept": [
+      "Abyssinia"
+    ],
+    "note": "Emperor Menelik II's victory forced Italy to recognise Ethiopian independence by treaty that same year.",
+    "era": "timeless",
+    "topic": "african-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-149",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which Southeast Asian empire was ruled from the temple city of Angkor?",
+    "a": "The Khmer Empire",
+    "accept": [
+      "Khmer Empire",
+      "Khmer",
+      "The Angkor Empire"
+    ],
+    "note": "Angkor Wat, its most famous temple, was built in the 12th century under Suryavarman II.",
+    "era": "timeless",
+    "topic": "asian-history",
+    "pack": "core"
+  },
+  {
+    "id": "his-150",
+    "category": "history",
+    "difficulty": 3,
+    "q": "Which came first: the building of the Great Pyramid of Giza, or the death of the last known woolly mammoths?",
+    "a": "The Great Pyramid",
+    "accept": [
+      "The Great Pyramid of Giza",
+      "The pyramid",
+      "Great Pyramid"
+    ],
+    "note": "The pyramid went up around 2560 BC, while a small mammoth population survived on Arctic Wrangel Island until roughly 2000 BC.",
+    "era": "timeless",
+    "topic": "which-came-first",
+    "pack": "core"
   }
 ]

@@ -1564,5 +1564,425 @@
     "era": "1970s",
     "topic": "video-games",
     "pack": "core"
+  },
+  {
+    "id": "ent-121",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "In the 1987 film Dirty Dancing, what is the nickname of the teenage heroine, Frances Houseman?",
+    "a": "Baby",
+    "accept": [
+      "Baby Houseman"
+    ],
+    "note": "The film's best-known line, 'Nobody puts Baby in a corner', arrives barely two minutes before the final dance.",
+    "era": "1980s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-122",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "In the 1984 film Ghostbusters, what giant mascot-shaped monster stomps through New York in the finale?",
+    "a": "The Stay Puft Marshmallow Man",
+    "accept": [
+      "Stay Puft Marshmallow Man",
+      "Stay Puft",
+      "The Marshmallow Man"
+    ],
+    "note": "He appears because Ray cannot stop himself picturing the most harmless thing he can think of.",
+    "era": "1980s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-123",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 1978 musical film Grease, what is the name of the high school attended by Danny and Sandy?",
+    "a": "Rydell High",
+    "accept": [
+      "Rydell",
+      "Rydell High School"
+    ],
+    "note": "The school is named after 1950s teen singer Bobby Rydell, and most of its 'students' were played by actors in their late twenties.",
+    "era": "1970s",
+    "topic": "film-musical",
+    "pack": "core"
+  },
+  {
+    "id": "ent-124",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 1971 film Willy Wonka & the Chocolate Factory, what is the surname of the poor boy who finds the last golden ticket?",
+    "a": "Bucket",
+    "accept": [
+      "Charlie Bucket"
+    ],
+    "note": "The film flopped on release and only became a staple decades later through television showings.",
+    "era": "1970s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-125",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 1987 film The Princess Bride, what is the first name of the Spanish swordsman hunting the six-fingered man who killed his father?",
+    "a": "Inigo",
+    "accept": [
+      "Inigo Montoya"
+    ],
+    "note": "Mandy Patinkin, who played him, has said the duel let him act out avenging his own father's death.",
+    "era": "1980s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-126",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 1988 film Die Hard, which British actor made his feature film debut as the villain Hans Gruber?",
+    "a": "Alan Rickman",
+    "accept": [
+      "Rickman"
+    ],
+    "note": "He was a stage actor with no screen credits when he was cast, and he was 41 at the time.",
+    "era": "1980s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-127",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "The whispered line in the 1989 film Field of Dreams is usually misquoted as 'If you build it, they will come'. Which single word does the film actually use in place of 'they'?",
+    "a": "He",
+    "accept": [
+      "If you build it, he will come",
+      "He will come"
+    ],
+    "note": "The 'he' is Kevin Costner's estranged father, which is the whole point of the ending.",
+    "era": "1980s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-128",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "In the 1967 film The Graduate, a family friend gives Benjamin one word of career advice at his party. What is the word?",
+    "a": "Plastics",
+    "accept": [],
+    "note": "The scene lasts about twenty seconds and became shorthand for an entire generation's distrust of its parents.",
+    "era": "1960s",
+    "topic": "classic-film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-129",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 1993 comedy Groundhog Day, in which Pennsylvania town is Bill Murray's weatherman trapped reliving the same day?",
+    "a": "Punxsutawney",
+    "accept": [
+      "Punxsutawney, Pennsylvania"
+    ],
+    "note": "Almost none of it was shot there; the town square scenes were filmed in Woodstock, Illinois.",
+    "era": "1990s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-130",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "Which 1999 M. Night Shyamalan film features a boy who tells a child psychologist 'I see dead people'?",
+    "a": "The Sixth Sense",
+    "accept": [
+      "Sixth Sense"
+    ],
+    "note": "Haley Joel Osment was eleven when he filmed it and was nominated for a Best Supporting Actor Oscar.",
+    "era": "1990s",
+    "topic": "film",
+    "pack": "core"
+  },
+  {
+    "id": "ent-131",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the 2003 Pixar film Finding Nemo, what is the name of Nemo's anxious father?",
+    "a": "Marlin",
+    "accept": [],
+    "note": "Real clownfish live in anemones whose stinging tentacles they are immune to, which is why the film's reef home works.",
+    "era": "2000s",
+    "topic": "animation",
+    "pack": "core"
+  },
+  {
+    "id": "ent-132",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "In the 2013 animated film Frozen, what is the name of the chatty snowman brought to life by Elsa's magic?",
+    "a": "Olaf",
+    "accept": [],
+    "note": "His song about summer is sung by Josh Gad, who improvised much of the character's dialogue in the booth.",
+    "era": "2010s",
+    "topic": "animation",
+    "pack": "core"
+  },
+  {
+    "id": "ent-133",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "Which American band recorded the 1976 album Hotel California?",
+    "a": "The Eagles",
+    "accept": [
+      "Eagles"
+    ],
+    "note": "The hotel on the sleeve is the Beverly Hills Hotel, photographed from a cherry picker across Sunset Boulevard.",
+    "era": "1970s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-134",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "Which country singer, known as the Man in Black, recorded a live album at Folsom Prison in 1968?",
+    "a": "Johnny Cash",
+    "accept": [
+      "Cash"
+    ],
+    "note": "He had never served time in Folsom; his prison sympathies came from a single night in a Texas jail cell and a film he saw in the Air Force.",
+    "era": "1960s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-135",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "Which British singer's 2011 album 21 included the songs 'Rolling in the Deep' and 'Someone Like You'?",
+    "a": "Adele",
+    "accept": [],
+    "note": "She names her albums after the age she was when she wrote them.",
+    "era": "2010s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-136",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "Which Norwegian band's 1985 hit 'Take On Me' had a video mixing live action with pencil-sketch animation?",
+    "a": "a-ha",
+    "accept": [
+      "Aha",
+      "A-ha"
+    ],
+    "note": "The sketch effect is rotoscoping: roughly 3,000 frames were traced by hand over about four months.",
+    "era": "1980s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-137",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In Journey's 1981 song 'Don't Stop Believin'', the city boy of the second line was born and raised in which place?",
+    "a": "South Detroit",
+    "accept": [
+      "South Detroit, Michigan"
+    ],
+    "note": "No such district exists; head south from downtown Detroit and you cross the river into Windsor, Canada.",
+    "era": "1980s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-138",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "Which South Korean artist's 2012 single 'Gangnam Style' became the first YouTube video to pass one billion views?",
+    "a": "Psy",
+    "accept": [
+      "PSY",
+      "Park Jae-sang"
+    ],
+    "note": "Gangnam is an affluent district of Seoul, and the song is a send-up of the people who live there.",
+    "era": "2010s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-139",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "Which singer, who broke through in 2008 with the single 'Just Dance', was born Stefani Germanotta?",
+    "a": "Lady Gaga",
+    "accept": [
+      "Gaga"
+    ],
+    "note": "She played piano bars in New York under her own name before the stage name stuck.",
+    "era": "2000s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-140",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "Which singer and bassist, the frontman of The Police, was born Gordon Sumner?",
+    "a": "Sting",
+    "accept": [],
+    "note": "The nickname came from a black-and-yellow striped sweater he wore on stage in his jazz band days.",
+    "era": "1980s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-141",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "The Australian rock band AC/DC took its name, in 1973, from an electrical label. What two terms do the letters stand for?",
+    "a": "Alternating current and direct current",
+    "accept": [
+      "Alternating current / direct current",
+      "Alternating current, direct current",
+      "AC is alternating current and DC is direct current"
+    ],
+    "note": "Guitarist brothers Angus and Malcolm Young had it suggested by their sister Margaret, who spotted the letters on an appliance.",
+    "era": "1970s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-142",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "Which 1970s southern rock band named itself after a mangled version of the name of their high school gym teacher, Leonard Skinner?",
+    "a": "Lynyrd Skynyrd",
+    "accept": [
+      "Skynyrd"
+    ],
+    "note": "Skinner had hauled the boys in for their long hair; years later he introduced the band on stage and let them use his real estate sign on an album sleeve.",
+    "era": "1970s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-143",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "The band Duran Duran took its name from a villainous scientist in which 1968 science fiction film starring Jane Fonda?",
+    "a": "Barbarella",
+    "accept": [],
+    "note": "The character is Dr. Durand Durand; the band shortened and doubled it after hearing the name in the film.",
+    "era": "1980s",
+    "topic": "music",
+    "pack": "core"
+  },
+  {
+    "id": "ent-144",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In the series Doctor Who, which began in 1963, what do the letters of the Doctor's ship, the TARDIS, stand for?",
+    "a": "Time And Relative Dimension In Space",
+    "accept": [
+      "Time and Relative Dimensions in Space",
+      "Time and relative dimension in space"
+    ],
+    "note": "The police box shape was only ever meant to be temporary camouflage picked up on a 1960s London street.",
+    "era": "1960s",
+    "topic": "tv",
+    "pack": "core"
+  },
+  {
+    "id": "ent-145",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "What was the name of the talking black Pontiac Trans Am driven by Michael Knight in the 1982 series Knight Rider?",
+    "a": "KITT",
+    "accept": [
+      "Kitt",
+      "Knight Industries Two Thousand"
+    ],
+    "note": "The initials stand for Knight Industries Two Thousand, and the car's voice was provided by actor William Daniels.",
+    "era": "1980s",
+    "topic": "tv",
+    "pack": "core"
+  },
+  {
+    "id": "ent-146",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "Which actor played the gold-chained mechanic B.A. Baracus on the 1980s action series The A-Team?",
+    "a": "Mr. T",
+    "accept": [
+      "Mr T",
+      "Laurence Tureaud"
+    ],
+    "note": "B.A. refuses to fly, so the team has to drug him into unconsciousness whenever a plane is involved.",
+    "era": "1980s",
+    "topic": "tv",
+    "pack": "core"
+  },
+  {
+    "id": "ent-147",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "Which sitcom, which premiered in 1993, is set at a Seattle radio station where psychiatrist Dr. Frasier Crane takes listeners' calls?",
+    "a": "Frasier",
+    "accept": [],
+    "note": "His callers were voiced by a stream of guest stars who never appeared on screen.",
+    "era": "1990s",
+    "topic": "tv-sitcom",
+    "pack": "core"
+  },
+  {
+    "id": "ent-148",
+    "category": "entertainment",
+    "difficulty": 1,
+    "q": "In the sitcom The Fresh Prince of Bel-Air, which began in 1990, which city does Will leave to move in with his wealthy relatives?",
+    "a": "Philadelphia",
+    "accept": [
+      "West Philadelphia",
+      "Philly"
+    ],
+    "note": "The theme song lays out the entire premise of the show before the first scene starts.",
+    "era": "1990s",
+    "topic": "tv-sitcom",
+    "pack": "core"
+  },
+  {
+    "id": "ent-149",
+    "category": "entertainment",
+    "difficulty": 3,
+    "q": "In the series Lost, which premiered in 2004, what was the airline and flight number of the plane that crashed on the island?",
+    "a": "Oceanic Flight 815",
+    "accept": [
+      "Oceanic 815",
+      "Flight 815",
+      "Oceanic Airlines Flight 815"
+    ],
+    "note": "Oceanic is a fictional airline that has stood in for a doomed carrier in several other films and shows.",
+    "era": "2000s",
+    "topic": "tv",
+    "pack": "core"
+  },
+  {
+    "id": "ent-150",
+    "category": "entertainment",
+    "difficulty": 2,
+    "q": "In which American city is the HBO crime drama The Wire, which premiered in 2002, set?",
+    "a": "Baltimore",
+    "accept": [
+      "Baltimore, Maryland"
+    ],
+    "note": "Creator David Simon covered crime there as a newspaper reporter for twelve years before writing it.",
+    "era": "2000s",
+    "topic": "tv",
+    "pack": "core"
   }
 ]

@@ -1667,5 +1667,408 @@
     "era": "timeless",
     "topic": "oddities",
     "pack": "core"
+  },
+  {
+    "id": "geo-121",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which is the highest mountain in the Alps?",
+    "a": "Mont Blanc",
+    "accept": [
+      "Monte Bianco"
+    ],
+    "note": "At about 4,808 metres it sits on the French-Italian border, well clear of the Matterhorn.",
+    "era": "timeless",
+    "topic": "mountains",
+    "pack": "core"
+  },
+  {
+    "id": "geo-122",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which is the highest mountain in Japan?",
+    "a": "Mount Fuji",
+    "accept": [
+      "Fuji",
+      "Fujisan"
+    ],
+    "note": "The 3,776-metre cone last erupted in 1707 and is still classed as an active volcano.",
+    "era": "timeless",
+    "topic": "mountains",
+    "pack": "core"
+  },
+  {
+    "id": "geo-123",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which river flows past St. Louis and Memphis on its way to the Gulf of Mexico?",
+    "a": "The Mississippi",
+    "accept": [
+      "Mississippi",
+      "Mississippi River"
+    ],
+    "note": "Its delta below New Orleans pushes new land out into the Gulf every year.",
+    "era": "timeless",
+    "topic": "rivers",
+    "pack": "core"
+  },
+  {
+    "id": "geo-124",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "What is the capital of Argentina?",
+    "a": "Buenos Aires",
+    "accept": [],
+    "note": "The name means 'good airs', and its residents are known as portenos, 'people of the port'.",
+    "era": "timeless",
+    "topic": "capitals",
+    "pack": "core"
+  },
+  {
+    "id": "geo-125",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which sea lies north of Turkey, also bordered by Bulgaria, Romania, Ukraine, Russia and Georgia?",
+    "a": "The Black Sea",
+    "accept": [
+      "Black Sea"
+    ],
+    "note": "Its only natural outlet to the wider ocean is the narrow Bosphorus at Istanbul.",
+    "era": "timeless",
+    "topic": "seas",
+    "pack": "core"
+  },
+  {
+    "id": "geo-126",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Reykjavik is the capital of which island country?",
+    "a": "Iceland",
+    "accept": [],
+    "note": "It is the world's northernmost capital of a sovereign state, just south of the Arctic Circle.",
+    "era": "timeless",
+    "topic": "capitals",
+    "pack": "core"
+  },
+  {
+    "id": "geo-127",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which strait separates Alaska from Russia?",
+    "a": "The Bering Strait",
+    "accept": [
+      "Bering Strait"
+    ],
+    "note": "Only about 82 kilometres wide, it is the boundary between Asia and North America.",
+    "era": "timeless",
+    "topic": "straits",
+    "pack": "core"
+  },
+  {
+    "id": "geo-128",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "The Great Salt Lake lies in which US state?",
+    "a": "Utah",
+    "accept": [],
+    "note": "It has no outlet to the sea, so evaporation leaves the water several times saltier than the ocean.",
+    "era": "timeless",
+    "topic": "lakes",
+    "pack": "core"
+  },
+  {
+    "id": "geo-129",
+    "category": "geography",
+    "difficulty": 1,
+    "q": "Which is larger in land area: Australia or Greenland?",
+    "a": "Australia",
+    "accept": [],
+    "note": "Australia is more than three times the size; the Mercator map projection hugely inflates anything near the poles.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
+  },
+  {
+    "id": "geo-130",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which lies further west: Reno, Nevada or Los Angeles, California?",
+    "a": "Reno",
+    "accept": [
+      "Reno, Nevada"
+    ],
+    "note": "California's coast bends sharply east below Point Conception, leaving Los Angeles east of most of Nevada's western edge.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
+  },
+  {
+    "id": "geo-131",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which African country contains more ancient pyramids than Egypt?",
+    "a": "Sudan",
+    "accept": [],
+    "note": "The Nubian kingdom of Kush built around 200 steep-sided pyramids, roughly double Egypt's tally.",
+    "era": "timeless",
+    "topic": "landmarks",
+    "pack": "core"
+  },
+  {
+    "id": "geo-132",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Greenland is an autonomous territory within which European kingdom?",
+    "a": "Denmark",
+    "accept": [
+      "The Kingdom of Denmark"
+    ],
+    "note": "That makes a small Scandinavian country the sovereign power over the world's largest island.",
+    "era": "timeless",
+    "topic": "countries",
+    "pack": "core"
+  },
+  {
+    "id": "geo-133",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "The Dutch parliament, government and royal palace all sit in The Hague, but which city is the official capital of the Netherlands?",
+    "a": "Amsterdam",
+    "accept": [],
+    "note": "The Dutch constitution names Amsterdam as capital while leaving the seat of government in The Hague.",
+    "era": "timeless",
+    "topic": "capitals",
+    "pack": "core"
+  },
+  {
+    "id": "geo-134",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "The canary bird is named after the Canary Islands, but the islands themselves are named after which animal?",
+    "a": "Dogs",
+    "accept": [
+      "Dog",
+      "The dog"
+    ],
+    "note": "Roman writers called the group Insulae Canariae, 'islands of the dogs', from the Latin canis.",
+    "era": "timeless",
+    "topic": "oddities",
+    "pack": "core"
+  },
+  {
+    "id": "geo-135",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which of the five Great Lakes lies entirely within the United States?",
+    "a": "Lake Michigan",
+    "accept": [
+      "Michigan"
+    ],
+    "note": "The Canadian border runs through the other four; Michigan is the only one wholly in US waters.",
+    "era": "timeless",
+    "topic": "lakes",
+    "pack": "core"
+  },
+  {
+    "id": "geo-136",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which sea separates Australia from New Zealand?",
+    "a": "The Tasman Sea",
+    "accept": [
+      "Tasman Sea"
+    ],
+    "note": "Named for Abel Tasman, who crossed it in 1642; the crossing is known locally as 'the ditch'.",
+    "era": "timeless",
+    "topic": "seas",
+    "pack": "core"
+  },
+  {
+    "id": "geo-137",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which opened to shipping first: the Suez Canal or the Panama Canal?",
+    "a": "The Suez Canal",
+    "accept": [
+      "Suez",
+      "Suez Canal"
+    ],
+    "note": "Suez opened in 1869, forty-five years before Panama's locks finally opened in 1914.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
+  },
+  {
+    "id": "geo-138",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which was begun first: the Great Wall of China or the Colosseum in Rome?",
+    "a": "The Great Wall of China",
+    "accept": [
+      "The Great Wall",
+      "Great Wall of China"
+    ],
+    "note": "Chinese states were building defensive walls centuries BC; the Colosseum was finished in AD 80.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
+  },
+  {
+    "id": "geo-139",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which park, established in 1872, is generally regarded as the world's first national park?",
+    "a": "Yellowstone",
+    "accept": [
+      "Yellowstone National Park"
+    ],
+    "note": "Congress set it aside before Wyoming, Montana or Idaho were even states.",
+    "era": "timeless",
+    "topic": "landmarks",
+    "pack": "core"
+  },
+  {
+    "id": "geo-140",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which continent is divided into more countries than any other?",
+    "a": "Africa",
+    "accept": [],
+    "note": "Africa holds 54 sovereign states, comfortably ahead of Asia's 49.",
+    "era": "timeless",
+    "topic": "countries",
+    "pack": "core"
+  },
+  {
+    "id": "geo-141",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which Caribbean island is shared between Haiti and the Dominican Republic?",
+    "a": "Hispaniola",
+    "accept": [],
+    "note": "It is the only Caribbean island split between two sovereign countries.",
+    "era": "timeless",
+    "topic": "islands",
+    "pack": "core"
+  },
+  {
+    "id": "geo-142",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Which is the highest mountain in South America?",
+    "a": "Aconcagua",
+    "accept": [
+      "Mount Aconcagua"
+    ],
+    "note": "At about 6,961 metres in Argentina, it is the highest peak anywhere outside Asia.",
+    "era": "timeless",
+    "topic": "mountains",
+    "pack": "core"
+  },
+  {
+    "id": "geo-143",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Victoria Falls sits on the border between which two African countries?",
+    "a": "Zambia and Zimbabwe",
+    "accept": [
+      "Zimbabwe and Zambia"
+    ],
+    "note": "The Zambezi drops into a chasm the locals call Mosi-oa-Tunya, 'the smoke that thunders'.",
+    "era": "timeless",
+    "topic": "borders",
+    "pack": "core"
+  },
+  {
+    "id": "geo-144",
+    "category": "geography",
+    "difficulty": 2,
+    "q": "Easter Island, famous for its giant stone heads, is a territory of which country?",
+    "a": "Chile",
+    "accept": [],
+    "note": "Chile annexed it in 1888; the island lies some 3,500 kilometres west of the mainland.",
+    "era": "timeless",
+    "topic": "islands",
+    "pack": "core"
+  },
+  {
+    "id": "geo-145",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "Which lies further east: Miami, Florida or Santiago, Chile?",
+    "a": "Santiago",
+    "accept": [
+      "Santiago, Chile"
+    ],
+    "note": "South America sits far to the east of where most people picture it; Santiago is about ten degrees of longitude east of Miami.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
+  },
+  {
+    "id": "geo-146",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "The northernmost point of mainland Africa lies in which country?",
+    "a": "Tunisia",
+    "accept": [],
+    "note": "Cap Angela, near Bizerte, beats anything in Morocco or Egypt by a comfortable margin.",
+    "era": "timeless",
+    "topic": "countries",
+    "pack": "core"
+  },
+  {
+    "id": "geo-147",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "Measured from its base on the ocean floor rather than from sea level, which Hawaiian mountain is the tallest on Earth?",
+    "a": "Mauna Kea",
+    "accept": [],
+    "note": "Base to summit it rises over 10,000 metres, though only 4,207 of those are above the waves.",
+    "era": "timeless",
+    "topic": "mountains",
+    "pack": "core"
+  },
+  {
+    "id": "geo-148",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "Which Ecuadorian volcano's summit is the point on land furthest from the centre of the Earth?",
+    "a": "Chimborazo",
+    "accept": [
+      "Mount Chimborazo"
+    ],
+    "note": "The planet bulges at the equator, so a 6,263-metre equatorial peak outreaches Everest from the core.",
+    "era": "timeless",
+    "topic": "mountains",
+    "pack": "core"
+  },
+  {
+    "id": "geo-149",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "Only two countries in the world are doubly landlocked, surrounded entirely by other landlocked countries. Name them.",
+    "a": "Liechtenstein and Uzbekistan",
+    "accept": [
+      "Uzbekistan and Liechtenstein"
+    ],
+    "note": "Liechtenstein is ringed by Switzerland and Austria; Uzbekistan's neighbours are all landlocked too, as the Caspian is a lake.",
+    "era": "timeless",
+    "topic": "countries",
+    "pack": "core"
+  },
+  {
+    "id": "geo-150",
+    "category": "geography",
+    "difficulty": 3,
+    "q": "Which was completed first: the Hoover Dam or the Golden Gate Bridge?",
+    "a": "The Hoover Dam",
+    "accept": [
+      "Hoover Dam"
+    ],
+    "note": "The dam was dedicated in 1935, nearly two years before the bridge opened in May 1937.",
+    "era": "timeless",
+    "topic": "comparisons",
+    "pack": "core"
   }
 ]

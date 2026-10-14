@@ -1720,5 +1720,468 @@
     "era": "timeless",
     "topic": "dominoes",
     "pack": "core"
+  },
+  {
+    "id": "spo-121",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "What shape is a boxing ring?",
+    "a": "Square",
+    "accept": [
+      "A square",
+      "Four-sided"
+    ],
+    "note": "Early prize fights were held in a circle of spectators, and the name stuck even after the roped square replaced it.",
+    "era": "timeless",
+    "topic": "boxing",
+    "pack": "core"
+  },
+  {
+    "id": "spo-122",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "Tennis has four Grand Slam tournaments: the Australian Open, the French Open, Wimbledon and which other?",
+    "a": "The US Open",
+    "accept": [
+      "US Open",
+      "United States Open",
+      "The United States Open"
+    ],
+    "note": "It is the only one of the four played on hard courts under floodlights in New York each September.",
+    "era": "timeless",
+    "topic": "tennis",
+    "pack": "core"
+  },
+  {
+    "id": "spo-123",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "In chess, how many pawns does each player have at the start of a game?",
+    "a": "Eight",
+    "accept": [
+      "8"
+    ],
+    "note": "They fill the whole second row, one in front of each of the eight bigger pieces.",
+    "era": "timeless",
+    "topic": "chess",
+    "pack": "core"
+  },
+  {
+    "id": "spo-124",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "In blackjack, what total are players trying to reach without going over?",
+    "a": "21",
+    "accept": [
+      "Twenty-one",
+      "Twenty one"
+    ],
+    "note": "Going over is called busting, and it loses the hand immediately no matter what the dealer holds.",
+    "era": "timeless",
+    "topic": "card games",
+    "pack": "core"
+  },
+  {
+    "id": "spo-125",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "In poker, what is the name of the highest possible hand, made up of ten, jack, queen, king and ace all in the same suit?",
+    "a": "A royal flush",
+    "accept": [
+      "Royal flush"
+    ],
+    "note": "It is simply the top end of a straight flush, which is why no separate rule is needed to rank it first.",
+    "era": "timeless",
+    "topic": "poker",
+    "pack": "core"
+  },
+  {
+    "id": "spo-126",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "In ten-pin bowling, what is it called when a player knocks down all ten pins using two balls in the same frame?",
+    "a": "A spare",
+    "accept": [
+      "Spare"
+    ],
+    "note": "A spare is marked on the scoresheet with a slash, while a strike gets an X.",
+    "era": "timeless",
+    "topic": "bowling",
+    "pack": "core"
+  },
+  {
+    "id": "spo-127",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "How many metres long is the swimming pool used for Olympic competition?",
+    "a": "50 metres",
+    "accept": [
+      "50",
+      "Fifty metres",
+      "50m",
+      "Fifty"
+    ],
+    "note": "Races in a 25-metre pool are called short course and are listed in separate record books.",
+    "era": "timeless",
+    "topic": "swimming",
+    "pack": "core"
+  },
+  {
+    "id": "spo-128",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "In soccer, what kick is awarded to the attacking team when a defender puts the ball out of play over his own goal line?",
+    "a": "A corner kick",
+    "accept": [
+      "Corner kick",
+      "A corner",
+      "Corner"
+    ],
+    "note": "The ball is placed in the quarter-circle arc at whichever corner flag it went out nearest.",
+    "era": "timeless",
+    "topic": "soccer",
+    "pack": "core"
+  },
+  {
+    "id": "spo-129",
+    "category": "sports",
+    "difficulty": 1,
+    "q": "How many metres is one lap of a standard outdoor running track, measured in the inside lane?",
+    "a": "400 metres",
+    "accept": [
+      "400",
+      "Four hundred metres",
+      "400m"
+    ],
+    "note": "Because the outer lanes are longer, sprint races up to 400 metres use staggered starting positions.",
+    "era": "timeless",
+    "topic": "athletics",
+    "pack": "core"
+  },
+  {
+    "id": "spo-130",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Sailing's America's Cup is not named after the United States. What is it named after?",
+    "a": "The yacht America",
+    "accept": [
+      "A yacht called America",
+      "A boat called America",
+      "The schooner America",
+      "America, a yacht"
+    ],
+    "note": "The schooner America won a race round the Isle of Wight in 1851, and the trophy it carried home took the boat's name.",
+    "era": "timeless",
+    "topic": "sailing",
+    "pack": "core"
+  },
+  {
+    "id": "spo-131",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "The word soccer began as a British abbreviation of which two-word name for the game?",
+    "a": "Association football",
+    "accept": [
+      "Association Football"
+    ],
+    "note": "Oxford students clipped assoc to soc and added -er, the same slang habit that gave rugby the nickname rugger.",
+    "era": "timeless",
+    "topic": "soccer",
+    "pack": "core"
+  },
+  {
+    "id": "spo-132",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Cricket's Ashes series got its name from a mock obituary for English cricket, printed after England lost at home in 1882 to which country?",
+    "a": "Australia",
+    "accept": [
+      "Australian"
+    ],
+    "note": "The spoof notice said English cricket had died and the body would be cremated, which is why the prize is a small urn.",
+    "era": "timeless",
+    "topic": "cricket",
+    "pack": "core"
+  },
+  {
+    "id": "spo-133",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "The name of which martial art translates from Japanese as empty hand?",
+    "a": "Karate",
+    "accept": [
+      "Karate-do",
+      "Karate do"
+    ],
+    "note": "It developed on Okinawa, and the empty-hand name marks it out from the island's weapon-based fighting styles.",
+    "era": "timeless",
+    "topic": "martial arts",
+    "pack": "core"
+  },
+  {
+    "id": "spo-134",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Which stick-and-ball team sport, long played by Indigenous peoples of North America, takes its name from the French for the stick?",
+    "a": "Lacrosse",
+    "accept": [
+      "La crosse"
+    ],
+    "note": "French missionaries wrote of the game as la crosse, after the crook-shaped stick it is played with.",
+    "era": "timeless",
+    "topic": "lacrosse",
+    "pack": "core"
+  },
+  {
+    "id": "spo-135",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Table tennis is widely known by which other name, which started life as a trademarked brand?",
+    "a": "Ping-pong",
+    "accept": [
+      "Ping pong",
+      "Pingpong",
+      "Ping-Pong"
+    ],
+    "note": "Because the name was owned by games manufacturers, clubs and federations adopted the neutral title table tennis instead.",
+    "era": "timeless",
+    "topic": "table tennis",
+    "pack": "core"
+  },
+  {
+    "id": "spo-136",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Which Italian cycling race puts its overall leader in a pink jersey?",
+    "a": "The Giro d'Italia",
+    "accept": [
+      "Giro d'Italia",
+      "Giro",
+      "The Giro",
+      "Giro ditalia",
+      "Giro d Italia"
+    ],
+    "note": "The pink matches the paper of the sponsoring sports newspaper La Gazzetta dello Sport.",
+    "era": "timeless",
+    "topic": "cycling",
+    "pack": "core"
+  },
+  {
+    "id": "spo-137",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "In rugby league, how many players from each team are on the field?",
+    "a": "Thirteen",
+    "accept": [
+      "13"
+    ],
+    "note": "The thirteen-a-side game is the main point of difference from rugby union, which fields two more players per team.",
+    "era": "timeless",
+    "topic": "rugby",
+    "pack": "core"
+  },
+  {
+    "id": "spo-138",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "In cricket, what are the two small pieces of wood balanced on top of the stumps called?",
+    "a": "The bails",
+    "accept": [
+      "Bails",
+      "Bail"
+    ],
+    "note": "A batter is bowled only when the delivery knocks a bail clean out of its groove.",
+    "era": "timeless",
+    "topic": "cricket",
+    "pack": "core"
+  },
+  {
+    "id": "spo-139",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "What is the highest break a player can make in a standard frame of snooker?",
+    "a": "147",
+    "accept": [
+      "One hundred and forty-seven",
+      "A 147",
+      "147 break"
+    ],
+    "note": "It takes all fifteen reds, each followed by the black, and then the six colours in order.",
+    "era": "timeless",
+    "topic": "snooker",
+    "pack": "core"
+  },
+  {
+    "id": "spo-140",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "In professional darts, what score does each player start a leg on?",
+    "a": "501",
+    "accept": [
+      "Five hundred and one",
+      "501 points"
+    ],
+    "note": "The odd extra point forces players to finish on a double, since 500 could be checked out with plain scoring.",
+    "era": "timeless",
+    "topic": "darts",
+    "pack": "core"
+  },
+  {
+    "id": "spo-141",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "What is the name of the chess move in which the king and one of the rooks both move at the same time?",
+    "a": "Castling",
+    "accept": [
+      "Castle",
+      "To castle",
+      "Castling the king"
+    ],
+    "note": "It is the only move in chess that shifts two of your own pieces in one turn.",
+    "era": "timeless",
+    "topic": "chess",
+    "pack": "core"
+  },
+  {
+    "id": "spo-142",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "Apart from the Q, which letter tile is worth ten points in English-language Scrabble?",
+    "a": "Z",
+    "accept": [
+      "The Z",
+      "Zed",
+      "Zee"
+    ],
+    "note": "The point values were set by counting letter frequencies in newspaper pages, which is why the rarest letters score most.",
+    "era": "timeless",
+    "topic": "scrabble",
+    "pack": "core"
+  },
+  {
+    "id": "spo-143",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "In the high jump, what is the name of the technique in which the athlete clears the bar head-first and on their back?",
+    "a": "The Fosbury Flop",
+    "accept": [
+      "Fosbury Flop",
+      "The flop"
+    ],
+    "note": "Dick Fosbury won Olympic gold with it in 1968, and within a decade almost every jumper had copied him.",
+    "era": "timeless",
+    "topic": "athletics",
+    "pack": "core"
+  },
+  {
+    "id": "spo-144",
+    "category": "sports",
+    "difficulty": 2,
+    "q": "In basketball, what is the violation called when a player moves their feet illegally while holding the ball instead of dribbling?",
+    "a": "Travelling",
+    "accept": [
+      "Traveling",
+      "A travel",
+      "Travel"
+    ],
+    "note": "The penalty is simply a turnover, with the other side given the ball from the sideline.",
+    "era": "timeless",
+    "topic": "basketball",
+    "pack": "core"
+  },
+  {
+    "id": "spo-145",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "The sport of badminton is named after Badminton House, the English country seat of which duke?",
+    "a": "The Duke of Beaufort",
+    "accept": [
+      "Duke of Beaufort",
+      "Beaufort"
+    ],
+    "note": "The game was popularised by guests at the house in the 1860s and carried its address as its name.",
+    "era": "timeless",
+    "topic": "badminton",
+    "pack": "core"
+  },
+  {
+    "id": "spo-146",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "The French Open is also called Roland-Garros, after a Frenchman famous for what, rather than for tennis?",
+    "a": "Flying, as a pioneering aviator",
+    "accept": [
+      "Aviation",
+      "Flying",
+      "He was an aviator",
+      "Aviator",
+      "He was a pilot",
+      "Being a pilot"
+    ],
+    "note": "Roland Garros made the first flight across the Mediterranean in 1913 and the Paris stadium was named in his memory.",
+    "era": "timeless",
+    "topic": "tennis",
+    "pack": "core"
+  },
+  {
+    "id": "spo-147",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "The original soccer World Cup trophy, stolen in Brazil in 1983 and never recovered, was named after which FIFA president?",
+    "a": "Jules Rimet",
+    "accept": [
+      "Rimet",
+      "Jules Rimet Trophy"
+    ],
+    "note": "Brazil had been allowed to keep it permanently after a third World Cup win in 1970, and a new trophy has been used since 1974.",
+    "era": "timeless",
+    "topic": "soccer",
+    "pack": "core"
+  },
+  {
+    "id": "spo-148",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "Monopoly grew out of an earlier board game patented in 1904 by Elizabeth Magie. What was that game called?",
+    "a": "The Landlord's Game",
+    "accept": [
+      "Landlord's Game",
+      "The Landlords Game",
+      "Landlords Game"
+    ],
+    "note": "Magie designed it to argue against land monopolies, so the game was meant as a warning rather than a celebration.",
+    "era": "timeless",
+    "topic": "board games",
+    "pack": "core"
+  },
+  {
+    "id": "spo-149",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "The name of which Olympic sport comes from a Greek word meaning naked?",
+    "a": "Gymnastics",
+    "accept": [
+      "Gymnastics, from gymnos"
+    ],
+    "note": "Greek athletes trained unclothed in a building called the gymnasion, which is also where the word gymnasium comes from.",
+    "era": "timeless",
+    "topic": "gymnastics",
+    "pack": "core"
+  },
+  {
+    "id": "spo-150",
+    "category": "sports",
+    "difficulty": 3,
+    "q": "In sumo wrestling, what is the name of the raised clay circle in which bouts take place?",
+    "a": "The dohyo",
+    "accept": [
+      "Dohyo",
+      "Dohyō",
+      "The dohyō"
+    ],
+    "note": "Its edge is marked by half-buried bales of rice straw, and stepping outside them loses the bout.",
+    "era": "timeless",
+    "topic": "sumo",
+    "pack": "core"
   }
 ]

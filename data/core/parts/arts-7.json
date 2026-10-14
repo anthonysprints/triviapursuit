@@ -1,0 +1,427 @@
+[
+  {
+    "id": "art-121",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "Which ancient Greek poet is traditionally credited with composing both the Iliad and the Odyssey?",
+    "a": "Homer",
+    "accept": [],
+    "note": "Scholars still argue over whether Homer was one person, several, or a tradition of oral performers.",
+    "era": "timeless",
+    "topic": "epic-poetry",
+    "pack": "core"
+  },
+  {
+    "id": "art-122",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "Which American author wrote Little Women, about the four March sisters?",
+    "a": "Louisa May Alcott",
+    "accept": [
+      "Alcott"
+    ],
+    "note": "Alcott drew the sisters from her own family in Concord, Massachusetts, and wrote the book in a few weeks at her publisher's nagging.",
+    "era": "timeless",
+    "topic": "classic-novels",
+    "pack": "core"
+  },
+  {
+    "id": "art-123",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "Which author created the man-cub Mowgli in The Jungle Book?",
+    "a": "Rudyard Kipling",
+    "accept": [
+      "Kipling"
+    ],
+    "note": "Kipling was born in Bombay and wrote the stories while living in Vermont.",
+    "era": "timeless",
+    "topic": "childrens-literature",
+    "pack": "core"
+  },
+  {
+    "id": "art-124",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "Which Scottish author wrote both Treasure Island and Strange Case of Dr Jekyll and Mr Hyde?",
+    "a": "Robert Louis Stevenson",
+    "accept": [
+      "Stevenson"
+    ],
+    "note": "Chronically ill for most of his life, he spent his final years in Samoa, where he is buried.",
+    "era": "timeless",
+    "topic": "classic-novels",
+    "pack": "core"
+  },
+  {
+    "id": "art-125",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "In Greek mythology, what is the name of the three-headed dog that guards the entrance to the underworld?",
+    "a": "Cerberus",
+    "accept": [],
+    "note": "Dante borrowed him for the Inferno, setting him to guard the circle of the gluttons.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-126",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "In Greek myth, which king was granted a wish that turned everything he touched to gold?",
+    "a": "King Midas",
+    "accept": [
+      "Midas"
+    ],
+    "note": "In a separate tale Midas judges a music contest against Apollo and is given donkey's ears for his poor taste.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-127",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "In Greek myth, which beautiful youth wasted away after falling in love with his own reflection in a pool?",
+    "a": "Narcissus",
+    "accept": [],
+    "note": "The nymph Echo, who loved him, had already been reduced to repeating other people's words.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-128",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "In Greek myth, how many Labours was Heracles made to perform as a penance?",
+    "a": "Twelve",
+    "accept": [
+      "12"
+    ],
+    "note": "They were set by his cousin King Eurystheus, and the first was to kill the Nemean Lion.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-129",
+    "category": "arts",
+    "difficulty": 1,
+    "q": "Which vast temple complex, built in the 12th century, appears on the national flag of Cambodia?",
+    "a": "Angkor Wat",
+    "accept": [
+      "Angkor"
+    ],
+    "note": "It is the only building that appears on any country’s national flag.",
+    "era": "timeless",
+    "topic": "architecture",
+    "pack": "core"
+  },
+  {
+    "id": "art-130",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "\"Dr. Seuss\" was the pen name of which American writer and illustrator?",
+    "a": "Theodor Seuss Geisel",
+    "accept": [
+      "Theodor Geisel",
+      "Geisel",
+      "Ted Geisel"
+    ],
+    "note": "Seuss was his mother's maiden name, and he was not a doctor of anything.",
+    "era": "timeless",
+    "topic": "pen-names",
+    "pack": "core"
+  },
+  {
+    "id": "art-131",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "The Victorian novelist who published Middlemarch and Silas Marner as \"George Eliot\" was really a woman with what name?",
+    "a": "Mary Ann Evans",
+    "accept": [
+      "Mary Anne Evans",
+      "Marian Evans",
+      "Evans"
+    ],
+    "note": "She chose a male pen name partly to escape the era's assumption that women wrote only light romances.",
+    "era": "timeless",
+    "topic": "pen-names",
+    "pack": "core"
+  },
+  {
+    "id": "art-132",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Agatha Christie's moustachioed detective Hercule Poirot is of which nationality, often wrongly assumed to be French?",
+    "a": "Belgian",
+    "accept": [
+      "Belgium"
+    ],
+    "note": "When Christie killed him off in Curtain, Poirot received a front-page obituary in The New York Times.",
+    "era": "timeless",
+    "topic": "detective-fiction",
+    "pack": "core"
+  },
+  {
+    "id": "art-133",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "In L. Frank Baum's original novel The Wonderful Wizard of Oz, what colour are Dorothy's magic slippers?",
+    "a": "Silver",
+    "accept": [],
+    "note": "The ruby slippers were an invention of the 1939 MGM film, which wanted a colour that would pop in Technicolor.",
+    "era": "timeless",
+    "topic": "childrens-literature",
+    "pack": "core"
+  },
+  {
+    "id": "art-134",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "In Greek myth, the Titan Atlas was condemned to hold up what on his shoulders?",
+    "a": "The sky",
+    "accept": [
+      "The heavens",
+      "Sky",
+      "Heavens"
+    ],
+    "note": "The Roman statue known as the Farnese Atlas shows him carrying a celestial sphere, not the Earth.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-135",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "At the Palace of Westminster in London, what exactly is \"Big Ben\" the name of?",
+    "a": "The bell",
+    "accept": [
+      "The great bell",
+      "The bell in the tower"
+    ],
+    "note": "The tower that houses it was simply the Clock Tower until it was renamed the Elizabeth Tower in 2012.",
+    "era": "timeless",
+    "topic": "architecture",
+    "pack": "core"
+  },
+  {
+    "id": "art-136",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Which was completed first, the Statue of Liberty or the Eiffel Tower?",
+    "a": "The Statue of Liberty",
+    "accept": [
+      "Statue of Liberty"
+    ],
+    "note": "Gustave Eiffel designed the statue's internal iron framework three years before his tower opened.",
+    "era": "timeless",
+    "topic": "architecture",
+    "pack": "core"
+  },
+  {
+    "id": "art-137",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Which was published first, Jules Verne's Twenty Thousand Leagues Under the Sea or H.G. Wells's The Time Machine?",
+    "a": "Twenty Thousand Leagues Under the Sea",
+    "accept": [
+      "Twenty Thousand Leagues",
+      "20000 Leagues Under the Sea",
+      "Verne"
+    ],
+    "note": "The leagues in Verne's title measure how far the Nautilus travels, not how deep it goes.",
+    "era": "timeless",
+    "topic": "science-fiction",
+    "pack": "core"
+  },
+  {
+    "id": "art-138",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Which Austrian painter covered The Kiss in gold leaf during his so-called Golden Phase?",
+    "a": "Gustav Klimt",
+    "accept": [
+      "Klimt"
+    ],
+    "note": "The painting hangs in the Belvedere in Vienna, where it has become the city's unofficial emblem.",
+    "era": "timeless",
+    "topic": "painting",
+    "pack": "core"
+  },
+  {
+    "id": "art-139",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Which American abstract painter made his best-known works by dripping and flinging paint onto canvases laid on the floor?",
+    "a": "Jackson Pollock",
+    "accept": [
+      "Pollock"
+    ],
+    "note": "A 1956 Time magazine piece nicknamed him \"Jack the Dripper\".",
+    "era": "timeless",
+    "topic": "painting",
+    "pack": "core"
+  },
+  {
+    "id": "art-140",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "In Greek myth, who was punished in the underworld by having to roll a boulder uphill, only for it to roll back down forever?",
+    "a": "Sisyphus",
+    "accept": [],
+    "note": "Albert Camus made him the hero of a famous essay, arguing that we must imagine him happy.",
+    "era": "timeless",
+    "topic": "greek-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-141",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "In Roman legend, which twin brothers were suckled by a she-wolf before one of them founded Rome?",
+    "a": "Romulus and Remus",
+    "accept": [
+      "Romulus & Remus"
+    ],
+    "note": "The twins quarrelled over the new city's walls, and Romulus killed his brother.",
+    "era": "timeless",
+    "topic": "roman-myth",
+    "pack": "core"
+  },
+  {
+    "id": "art-142",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "In which city does Hagia Sophia stand, raised as a cathedral in the 6th century under the emperor Justinian?",
+    "a": "Istanbul",
+    "accept": [
+      "Constantinople"
+    ],
+    "note": "It served as a cathedral for some 900 years, then as a mosque for nearly 500.",
+    "era": "timeless",
+    "topic": "architecture",
+    "pack": "core"
+  },
+  {
+    "id": "art-143",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "The musical My Fair Lady is based on which George Bernard Shaw play about a phonetics professor and a flower girl?",
+    "a": "Pygmalion",
+    "accept": [],
+    "note": "Shaw won an Academy Award for the screenplay of the 1938 film version of his own play.",
+    "era": "timeless",
+    "topic": "theatre",
+    "pack": "core"
+  },
+  {
+    "id": "art-144",
+    "category": "arts",
+    "difficulty": 2,
+    "q": "Which American author wrote Beloved, about a formerly enslaved woman haunted by the daughter she killed?",
+    "a": "Toni Morrison",
+    "accept": [
+      "Morrison"
+    ],
+    "note": "In 1993 she became the first Black woman awarded the Nobel Prize in Literature.",
+    "era": "timeless",
+    "topic": "modern-novels",
+    "pack": "core"
+  },
+  {
+    "id": "art-145",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "The painting everyone calls \"Whistler's Mother\" was actually titled by the artist as an arrangement in which two colours?",
+    "a": "Grey and black",
+    "accept": [
+      "Arrangement in Grey and Black",
+      "Arrangement in Grey and Black No. 1",
+      "Black and grey",
+      "Gray and black"
+    ],
+    "note": "France bought it in 1891, and it hangs today in the Musee d'Orsay rather than anywhere in America.",
+    "era": "timeless",
+    "topic": "painting",
+    "pack": "core"
+  },
+  {
+    "id": "art-146",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "Which was published first, C.S. Lewis's The Lion, the Witch and the Wardrobe or Tolkien's The Fellowship of the Ring?",
+    "a": "The Lion, the Witch and the Wardrobe",
+    "accept": [
+      "The Lion the Witch and the Wardrobe",
+      "Narnia",
+      "Lewis"
+    ],
+    "note": "Narnia beat Frodo to print by nearly four years, though Tolkien's The Hobbit had appeared back in 1937.",
+    "era": "timeless",
+    "topic": "fantasy",
+    "pack": "core"
+  },
+  {
+    "id": "art-147",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "\"Lewis Carroll\" was the pen name of which Oxford mathematics lecturer?",
+    "a": "Charles Lutwidge Dodgson",
+    "accept": [
+      "Charles Dodgson",
+      "Dodgson"
+    ],
+    "note": "He built the pen name by Latinising his first two names and then swapping them round.",
+    "era": "timeless",
+    "topic": "pen-names",
+    "pack": "core"
+  },
+  {
+    "id": "art-148",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "Victor Hugo's novel about the bell-ringer Quasimodo was published in French under what title, which is the name of a building rather than a person?",
+    "a": "Notre-Dame de Paris",
+    "accept": [
+      "Notre Dame de Paris",
+      "Notre-Dame"
+    ],
+    "note": "The book's popularity helped shame France into restoring the then-crumbling cathedral.",
+    "era": "timeless",
+    "topic": "classic-novels",
+    "pack": "core"
+  },
+  {
+    "id": "art-149",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "Which Renaissance architect designed and built the vast brick dome of Florence Cathedral?",
+    "a": "Filippo Brunelleschi",
+    "accept": [
+      "Brunelleschi"
+    ],
+    "note": "Finished in 1436, it is still the largest masonry dome ever built.",
+    "era": "timeless",
+    "topic": "architecture",
+    "pack": "core"
+  },
+  {
+    "id": "art-150",
+    "category": "arts",
+    "difficulty": 3,
+    "q": "Which Belgian Surrealist painted a careful picture of a pipe captioned \"This is not a pipe\"?",
+    "a": "Rene Magritte",
+    "accept": [
+      "Magritte",
+      "René Magritte"
+    ],
+    "note": "He also produced the bowler-hatted man with a green apple for a face, The Son of Man.",
+    "era": "timeless",
+    "topic": "painting",
+    "pack": "core"
+  }
+]
