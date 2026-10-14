@@ -104,7 +104,7 @@
     asked: new Set(Array.isArray(saved.asked) ? saved.asked : []),
     flagged: new Set(Array.isArray(saved.flagged) ? saved.flagged : []),
     settings: Object.assign(
-      { difficulty: 'all', housePct: 15, labels: {} },
+      { difficulty: 'all', housePct: 15, scoring: 'on' },
       saved.settings || {}
     ),
     session: Object.assign({ asked: 0, got: 0, missed: 0, started: false }, saved.session || {}),
@@ -130,8 +130,13 @@
   }
 
   function labelFor(cat) {
-    var custom = state.settings.labels[cat.id];
-    return (custom && custom.trim()) || cat.label;
+    return cat.label;
+  }
+
+  // "off" turns the game into a plain card dispenser: no chips, no
+  // got/missed, no turn passing — just draw, reveal, next.
+  function scoringOn() {
+    return state.settings.scoring !== 'off';
   }
 
   function activeDifficulties() {
@@ -204,7 +209,7 @@
   function renderPlayers() {
     var strip = $('players');
     strip.textContent = '';
-    strip.hidden = !state.players.length;
+    strip.hidden = !state.players.length || !scoringOn();
 
     state.players.forEach(function (player) {
       var chip = document.createElement('button');
@@ -251,9 +256,13 @@
         (isActive ? ', answering now' : ''));
     });
 
+    // The whole answer-screen scoring row goes away when scoring is off.
+    $('score-buttons').hidden = !scoringOn();
+    $('btn-done').hidden = scoringOn();
+
     var scoring = $('scoring-for');
-    scoring.hidden = !active;
-    if (active) {
+    scoring.hidden = !active || !scoringOn();
+    if (active && scoringOn()) {
       scoring.textContent = '';
       scoring.appendChild(document.createTextNode('Scoring for '));
       var strong = document.createElement('b');
@@ -439,11 +448,14 @@
       line.textContent = 'No questions loaded yet.';
     } else if (state.session.asked === 0) {
       line.textContent = BANK.length + ' questions in the deck';
-    } else {
+    } else if (scoringOn()) {
       line.textContent =
         state.session.asked + ' asked · ' +
         state.session.got + ' got · ' +
         state.session.missed + ' missed';
+    } else {
+      // No got/missed counts to report when nothing is being scored.
+      line.textContent = state.session.asked + ' asked this game';
     }
 
     refreshPlayers();
@@ -573,19 +585,24 @@
     show('answer');
   }
 
+  // gotIt is null when scoring is off — the question still counts as asked,
+  // so the no-repeat memory keeps working, but nothing is tallied.
   function settle(gotIt) {
     var question = state.current;
     if (question) {
       state.asked.add(question.id);
       state.session.asked += 1;
-      state.session[gotIt ? 'got' : 'missed'] += 1;
 
-      var player = activePlayer();
-      if (player) {
-        player[gotIt ? 'got' : 'missed'] += 1;
-        // Same rule as the board: a right answer rolls again, a wrong one
-        // passes the turn along. So a normal turn needs no tapping at all.
-        if (!gotIt) advancePlayer();
+      if (gotIt !== null) {
+        state.session[gotIt ? 'got' : 'missed'] += 1;
+
+        var player = activePlayer();
+        if (player) {
+          player[gotIt ? 'got' : 'missed'] += 1;
+          // Same rule as the board: a right answer rolls again, a wrong one
+          // passes the turn along. So a normal turn needs no tapping at all.
+          if (!gotIt) advancePlayer();
+        }
       }
       save();
     }
@@ -649,6 +666,16 @@
     });
     $('diff-help').textContent = DIFFICULTY[state.settings.difficulty].help;
 
+    var scoringButtons = $('seg-scoring').querySelectorAll('button');
+    Array.prototype.forEach.call(scoringButtons, function (button) {
+      var on = button.dataset.scoring === 'on';
+      button.setAttribute('aria-pressed', String(on === scoringOn()));
+    });
+    $('scoring-help').textContent = scoringOn()
+      ? 'Tracks who got what, and a miss passes the turn to the next player.'
+      : 'No players, no tally — the phone just deals a question and reveals the answer.';
+    $('players-field').hidden = !scoringOn();
+
     var house = hasHouse();
     $('house-range').value = state.settings.housePct;
     $('house-range').disabled = !house;
@@ -666,35 +693,6 @@
       : 'Nothing flagged. Use the flag button on any question that is wrong or unfair.';
   }
 
-  function buildLabelInputs() {
-    var grid = $('labels-grid');
-    grid.textContent = '';
-
-    CATEGORIES.forEach(function (cat) {
-      var label = document.createElement('label');
-
-      var swatch = document.createElement('span');
-      swatch.className = 'swatch';
-      swatch.style.setProperty('--tile', 'var(--c-' + cat.id + ')');
-      swatch.style.setProperty('--tile-ink', cat.onLight ? 'var(--on-fill-dark)' : 'var(--on-fill)');
-      swatch.innerHTML = ICONS[cat.id];
-      swatch.setAttribute('aria-hidden', 'true');
-
-      var input = document.createElement('input');
-      input.type = 'text';
-      input.value = labelFor(cat);
-      input.setAttribute('aria-label', cat.label + ' name');
-      input.addEventListener('input', function () {
-        state.settings.labels[cat.id] = input.value;
-        save();
-        refreshHome();
-      });
-
-      label.appendChild(swatch);
-      label.appendChild(input);
-      grid.appendChild(label);
-    });
-  }
 
   // ── wiring ─────────────────────────────────────────────────
 
@@ -709,6 +707,26 @@
   });
   $('btn-got').addEventListener('click', function () { settle(true); });
   $('btn-missed').addEventListener('click', function () { settle(false); });
+  $('btn-done').addEventListener('click', function () { settle(null); });
+
+  $('seg-scoring').addEventListener('click', function (event) {
+    var button = event.target.closest('button[data-scoring]');
+    if (!button) return;
+    var turningOn = button.dataset.scoring === 'on';
+    if (turningOn === scoringOn()) return;
+
+    state.settings.scoring = turningOn ? 'on' : 'off';
+    save();
+    refreshSettings();
+    renderPlayers();
+    refreshHome();
+
+    // Turning scoring on for the first time still needs names.
+    if (turningOn && !state.session.started) {
+      closeSheet();
+      openStartDialog(true);
+    }
+  });
   $('btn-flag').addEventListener('click', toggleFlag);
 
   // Fixes a mis-set turn without leaving the answer.
@@ -798,12 +816,12 @@
   // ── start ──────────────────────────────────────────────────
 
   buildTiles();
-  buildLabelInputs();
   renderPlayers();
   buildPlayerEditor();
   refreshSettings();
   show('home');
 
   // First run of a fresh browser: ask who is playing before anything else.
-  if (!state.session.started) openStartDialog(false);
+  // Skipped entirely when scoring is off — there is nobody to name.
+  if (!state.session.started && scoringOn()) openStartDialog(false);
 })();

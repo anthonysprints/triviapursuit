@@ -64,10 +64,11 @@
 
     <div class="actions">
       <button type="button" class="scoring-for" id="scoring-for" hidden></button>
-      <div class="actions-row">
+      <div class="actions-row" id="score-buttons">
         <button type="button" class="btn-got" id="btn-got">Got it</button>
         <button type="button" class="btn-miss" id="btn-missed">Missed it</button>
       </div>
+      <button type="button" class="btn-primary" id="btn-done" hidden>Next</button>
       <button type="button" class="btn-flag" id="btn-flag">
         <span id="flag-label">Flag this question</span>
       </button>
@@ -93,6 +94,15 @@
     </div>
 
     <div class="field">
+      <span class="field-label">Scoring</span>
+      <div class="seg" id="seg-scoring" role="group" aria-label="Scoring">
+        <button type="button" data-scoring="on">Keep score</button>
+        <button type="button" data-scoring="off">Just the cards</button>
+      </div>
+      <p class="field-help" id="scoring-help"></p>
+    </div>
+
+    <div class="field" id="players-field">
       <span class="field-label">
         Players
         <button type="button" class="link-btn" id="add-player">Add player</button>
@@ -106,11 +116,6 @@
       <span class="field-label">House questions <span class="pct" id="house-pct"></span></span>
       <input type="range" id="house-range" min="0" max="100" step="5" aria-label="House question mix">
       <p class="field-help" id="house-help"></p>
-    </div>
-
-    <div class="field">
-      <span class="field-label">Category names</span>
-      <div class="labels-grid" id="labels-grid"></div>
     </div>
 
     <div class="field">

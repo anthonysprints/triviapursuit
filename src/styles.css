@@ -705,39 +705,6 @@ input[type="range"] {
   color: var(--ink-70);
 }
 
-.labels-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.labels-grid label {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.swatch {
-  width: 34px;
-  height: 34px;
-  flex: none;
-  display: grid;
-  place-items: center;
-  border: 3px solid var(--outline);
-  border-radius: 6px;
-  background: var(--tile);
-  color: var(--tile-ink);
-}
-.swatch svg {
-  width: 19px;
-  height: 19px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.labels-grid input,
 .player-row input {
   flex: 1;
   min-width: 0;
@@ -751,7 +718,6 @@ input[type="range"] {
   font-size: 14px;
   font-weight: 500;
 }
-.labels-grid input:focus-visible,
 .player-row input:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 1px;
