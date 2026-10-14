@@ -569,15 +569,56 @@ body {
 .view-flood .btn-flag { color: var(--on-cat, var(--on-fill)); }
 .view-flood .btn-flag.is-flagged { color: var(--paper); }
 
-/* ── settings ────────────────────────────────────────────── */
+/* ── modals ──────────────────────────────────────────────── */
 
-/* A normal view rather than a fixed overlay — it scrolls with the page,
-   so it cannot be clipped on a short screen the way a bottom sheet was. */
-#view-settings {
-  gap: 24px;
-  justify-content: flex-start;
-  padding-bottom: 8px;
+/* The scrim both dims the page and centres its panel. Centring by flex
+   rather than by top:50% keeps the panel capped to the scrim, so it can
+   never spill past the viewport the way a bottom-pinned sheet did.
+   It carries the same diagonal stripe as the question screens, just darker
+   against the dimmed page instead of lighter against a wedge colour. */
+.modal-scrim {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 22px;
+  background-color: rgba(20, 16, 15, 0.58);
+  background-image: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.18) 0 16px, transparent 16px 32px);
 }
+
+/* Same treatment as the question card: cream face, heavy outline, hard
+   offset shadow, and the slight tilt. */
+.modal {
+  width: min(460px, 100%);
+  max-height: 100%;
+  overflow-y: auto;
+  background: var(--paper);
+  border: 4px solid var(--outline);
+  border-radius: 10px;
+  box-shadow: 10px 10px 0 var(--outline);
+  transform: rotate(-1.4deg);
+  padding: 22px 20px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-sm {
+  width: min(400px, 100%);
+  gap: 14px;
+}
+
+.modal h2 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.modal > .link-btn { align-self: flex-start; }
 
 .sheet-head {
   display: flex;
@@ -713,44 +754,8 @@ input[type="range"] {
 
 /* ── who's playing dialog ────────────────────────────────── */
 
-.dialog-scrim {
-  position: fixed;
-  inset: 0;
-  z-index: 12;
-  background: rgba(20, 16, 15, 0.55);
-}
-
-.dialog {
-  position: fixed;
-  left: 50%;
-  /* Anchored near the top rather than vertically centred: centring assumes
-     the viewport matches the visible area, which is not true when the page
-     is embedded in a shorter frame. */
-  top: 24px;
-  transform: translateX(-50%);
-  width: min(400px, calc(100% - 32px));
-  max-height: calc(100dvh - 48px);
-  overflow-y: auto;
-  z-index: 13;
-  background: var(--paper);
-  border: 4px solid var(--outline);
-  border-radius: 12px;
-  box-shadow: 10px 10px 0 var(--outline);
-  padding: 22px 20px 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.dialog h2 {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
-}
-
-.dialog .link-btn { align-self: flex-start; }
+/* Sits above the settings modal when both could be open. */
+#start-scrim { z-index: 12; }
 
 .dialog-actions {
   display: flex;
@@ -862,13 +867,15 @@ input[type="range"] {
   </section>
 
   <!-- ══ SETTINGS ══ -->
-  <!-- A full view, not an overlay: a fixed-position sheet gets clipped
-       whenever the visible area is shorter than its content. -->
-  <section class="view" id="view-settings" hidden aria-label="Settings">
-    <div class="sheet-head">
-      <h2>Settings</h2>
-      <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
-    </div>
+  <!-- The panel sits inside its scrim, which flex-centres it. That keeps it
+       capped to the viewport, so it can't be clipped the way a sheet pinned
+       to bottom:0 was. -->
+  <div class="modal-scrim" id="sheet-scrim" hidden>
+    <aside class="modal" id="sheet" aria-label="Settings">
+      <div class="sheet-head">
+        <h2>Settings</h2>
+        <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
+      </div>
 
     <div class="field">
       <span class="field-label">Difficulty</span>
@@ -913,21 +920,23 @@ input[type="range"] {
         <button type="button" class="btn-ghost" id="btn-copy-flags">Copy flagged</button>
       </div>
       <p class="field-help" id="flag-summary"></p>
-    </div>
-  </section>
+      </div>
+    </aside>
+  </div>
 
   <!-- ══ WHO'S PLAYING ══ -->
-  <div class="dialog-scrim" id="start-scrim" hidden></div>
-  <aside class="dialog" id="start-dialog" hidden aria-label="Who is playing">
-    <h2>Who's playing?</h2>
-    <p class="field-help">Two minimum, six maximum. Names can be changed later in settings, and this only resets the score — the deck keeps track of what you've already been asked.</p>
-    <div class="players-edit" id="start-players"></div>
-    <button type="button" class="link-btn" id="start-add">Add player</button>
-    <div class="dialog-actions">
-      <button type="button" class="btn-primary" id="start-go">Start game</button>
-      <button type="button" class="btn-ghost" id="start-cancel" hidden>Cancel</button>
-    </div>
-  </aside>
+  <div class="modal-scrim" id="start-scrim" hidden>
+    <aside class="modal modal-sm" id="start-dialog" aria-label="Who is playing">
+      <h2>Who's playing?</h2>
+      <p class="field-help">Two minimum, six maximum. Names can be changed later in settings, and this only resets the score — the deck keeps track of what you've already been asked.</p>
+      <div class="players-edit" id="start-players"></div>
+      <button type="button" class="link-btn" id="start-add">Add player</button>
+      <div class="dialog-actions">
+        <button type="button" class="btn-primary" id="start-go">Start game</button>
+        <button type="button" class="btn-ghost" id="start-cancel" hidden>Cancel</button>
+      </div>
+    </aside>
+  </div>
 
   <p class="toast" id="toast" hidden></p>
 </main>
@@ -1262,12 +1271,10 @@ input[type="range"] {
 
     $('start-cancel').hidden = !canCancel;
     buildStartRows();
-    $('start-dialog').hidden = false;
     $('start-scrim').hidden = false;
   }
 
   function closeStartDialog() {
-    $('start-dialog').hidden = true;
     $('start-scrim').hidden = true;
   }
 
@@ -1572,7 +1579,7 @@ input[type="range"] {
   // ── views ──────────────────────────────────────────────────
 
   function show(name) {
-    ['home', 'question', 'answer', 'settings'].forEach(function (view) {
+    ['home', 'question', 'answer'].forEach(function (view) {
       $('view-' + view).hidden = view !== name;
     });
     if (name === 'home') refreshHome();
@@ -1583,11 +1590,12 @@ input[type="range"] {
 
   function openSheet() {
     refreshSettings();
-    show('settings');
+    $('sheet-scrim').hidden = false;
   }
 
   function closeSheet() {
-    show('home');
+    $('sheet-scrim').hidden = true;
+    refreshHome();
   }
 
   function refreshSettings() {
@@ -1672,6 +1680,12 @@ input[type="range"] {
   $('open-settings').addEventListener('click', openSheet);
   $('close-settings').addEventListener('click', closeSheet);
 
+  // Only a tap on the scrim itself closes — not one that bubbled up from
+  // inside the panel.
+  $('sheet-scrim').addEventListener('click', function (event) {
+    if (event.target === event.currentTarget) closeSheet();
+  });
+
   $('seg-difficulty').addEventListener('click', function (event) {
     var button = event.target.closest('button[data-diff]');
     if (!button) return;
@@ -1741,8 +1755,8 @@ input[type="range"] {
 
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
-    if (!$('view-settings').hidden) closeSheet();
-    else if (!$('start-dialog').hidden && !$('start-cancel').hidden) closeStartDialog();
+    if (!$('sheet-scrim').hidden) closeSheet();
+    else if (!$('start-scrim').hidden && !$('start-cancel').hidden) closeStartDialog();
   });
 
   // ── start ──────────────────────────────────────────────────

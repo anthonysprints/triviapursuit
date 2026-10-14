@@ -326,12 +326,10 @@
 
     $('start-cancel').hidden = !canCancel;
     buildStartRows();
-    $('start-dialog').hidden = false;
     $('start-scrim').hidden = false;
   }
 
   function closeStartDialog() {
-    $('start-dialog').hidden = true;
     $('start-scrim').hidden = true;
   }
 
@@ -636,7 +634,7 @@
   // ── views ──────────────────────────────────────────────────
 
   function show(name) {
-    ['home', 'question', 'answer', 'settings'].forEach(function (view) {
+    ['home', 'question', 'answer'].forEach(function (view) {
       $('view-' + view).hidden = view !== name;
     });
     if (name === 'home') refreshHome();
@@ -647,11 +645,12 @@
 
   function openSheet() {
     refreshSettings();
-    show('settings');
+    $('sheet-scrim').hidden = false;
   }
 
   function closeSheet() {
-    show('home');
+    $('sheet-scrim').hidden = true;
+    refreshHome();
   }
 
   function refreshSettings() {
@@ -736,6 +735,12 @@
   $('open-settings').addEventListener('click', openSheet);
   $('close-settings').addEventListener('click', closeSheet);
 
+  // Only a tap on the scrim itself closes — not one that bubbled up from
+  // inside the panel.
+  $('sheet-scrim').addEventListener('click', function (event) {
+    if (event.target === event.currentTarget) closeSheet();
+  });
+
   $('seg-difficulty').addEventListener('click', function (event) {
     var button = event.target.closest('button[data-diff]');
     if (!button) return;
@@ -805,8 +810,8 @@
 
   document.addEventListener('keydown', function (event) {
     if (event.key !== 'Escape') return;
-    if (!$('view-settings').hidden) closeSheet();
-    else if (!$('start-dialog').hidden && !$('start-cancel').hidden) closeStartDialog();
+    if (!$('sheet-scrim').hidden) closeSheet();
+    else if (!$('start-scrim').hidden && !$('start-cancel').hidden) closeStartDialog();
   });
 
   // ── start ──────────────────────────────────────────────────

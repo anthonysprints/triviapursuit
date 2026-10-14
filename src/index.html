@@ -76,13 +76,15 @@
   </section>
 
   <!-- ══ SETTINGS ══ -->
-  <!-- A full view, not an overlay: a fixed-position sheet gets clipped
-       whenever the visible area is shorter than its content. -->
-  <section class="view" id="view-settings" hidden aria-label="Settings">
-    <div class="sheet-head">
-      <h2>Settings</h2>
-      <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
-    </div>
+  <!-- The panel sits inside its scrim, which flex-centres it. That keeps it
+       capped to the viewport, so it can't be clipped the way a sheet pinned
+       to bottom:0 was. -->
+  <div class="modal-scrim" id="sheet-scrim" hidden>
+    <aside class="modal" id="sheet" aria-label="Settings">
+      <div class="sheet-head">
+        <h2>Settings</h2>
+        <button type="button" class="icon-btn" id="close-settings" aria-label="Close settings">✕</button>
+      </div>
 
     <div class="field">
       <span class="field-label">Difficulty</span>
@@ -127,21 +129,23 @@
         <button type="button" class="btn-ghost" id="btn-copy-flags">Copy flagged</button>
       </div>
       <p class="field-help" id="flag-summary"></p>
-    </div>
-  </section>
+      </div>
+    </aside>
+  </div>
 
   <!-- ══ WHO'S PLAYING ══ -->
-  <div class="dialog-scrim" id="start-scrim" hidden></div>
-  <aside class="dialog" id="start-dialog" hidden aria-label="Who is playing">
-    <h2>Who's playing?</h2>
-    <p class="field-help">Two minimum, six maximum. Names can be changed later in settings, and this only resets the score — the deck keeps track of what you've already been asked.</p>
-    <div class="players-edit" id="start-players"></div>
-    <button type="button" class="link-btn" id="start-add">Add player</button>
-    <div class="dialog-actions">
-      <button type="button" class="btn-primary" id="start-go">Start game</button>
-      <button type="button" class="btn-ghost" id="start-cancel" hidden>Cancel</button>
-    </div>
-  </aside>
+  <div class="modal-scrim" id="start-scrim" hidden>
+    <aside class="modal modal-sm" id="start-dialog" aria-label="Who is playing">
+      <h2>Who's playing?</h2>
+      <p class="field-help">Two minimum, six maximum. Names can be changed later in settings, and this only resets the score — the deck keeps track of what you've already been asked.</p>
+      <div class="players-edit" id="start-players"></div>
+      <button type="button" class="link-btn" id="start-add">Add player</button>
+      <div class="dialog-actions">
+        <button type="button" class="btn-primary" id="start-go">Start game</button>
+        <button type="button" class="btn-ghost" id="start-cancel" hidden>Cancel</button>
+      </div>
+    </aside>
+  </div>
 
   <p class="toast" id="toast" hidden></p>
 </main>
